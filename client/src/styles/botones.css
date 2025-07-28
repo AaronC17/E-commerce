@@ -32,7 +32,7 @@
 }
 
 .btn-gradient:hover, .btn-gradient:focus {
-  background: linear-gradient(135deg, #929A68 0%, #4B5320 100%) !important;
+  background: linear-gradient(135deg, #72794d 0%, #4B5320 100%) !important;
   box-shadow: 0 10px 30px 0 rgba(49,9,75,0.25);
   color: #fff !important;
   transform: translateY(-3px) scale(1.02);
@@ -69,8 +69,8 @@
 }
 
 .btn-primary-custom:hover, .btn-primary-custom:focus {
-  background: linear-gradient(135deg, #929A68 0%, #4B5320 100%) !important;
-  box-shadow: 0 10px 30px rgba(106, 115, 55, 0.4) !important;
+  background: linear-gradient(135deg, #77804f 0%, #4B5320 100%) !important;
+  box-shadow: 0 10px 30px rgba(108, 117, 53, 0.4) !important;
   transform: translateY(-3px) !important;
 }
 
