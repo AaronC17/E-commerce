@@ -1,0 +1,25 @@
+/* FOOTER MODERNO */
+footer {
+  background: #fff;
+  box-shadow: 0 -2px 12px 0 rgba(106,115,55,0.06);
+  border-radius: var(--radius) var(--radius) 0 0;
+  padding: 2.5rem 0 1.5rem;
+  text-align: center;
+  color: var(--accent);
+  margin-top: 3rem;
+}
+footer span {
+  color: var(--primary);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+footer a {
+  color: var(--primary-dark);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+footer a:hover {
+  color: var(--primary);
+  text-decoration: underline;
+} 

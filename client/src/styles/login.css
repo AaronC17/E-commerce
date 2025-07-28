@@ -1,0 +1,33 @@
+/* LOGIN/REGISTRO MODERNO */
+.login-container {
+  max-width: 400px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 2.5rem 2rem;
+}
+.login-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.login-tab {
+  background: var(--secondary);
+  color: var(--primary-dark);
+  border: none;
+  border-radius: 20px;
+  padding: 0.7rem 1.5rem;
+  font-weight: 600;
+  font-size: 1.05rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.login-tab.active, .login-tab:hover {
+  background: var(--primary);
+  color: #fff;
+}
+.login-form {
+  margin-top: 1rem;
+} 

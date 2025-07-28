@@ -1,0 +1,29 @@
+@media (max-width: 1200px) {
+  .catalogo-row { gap: 1.2rem; }
+  .product-card { min-width: 220px; max-width: 100%; }
+  .detalle-container { gap: 1.2rem; }
+}
+@media (max-width: 992px) {
+  .navbar-brand { font-size: 1.5rem; }
+  .catalogo-row { flex-direction: column; gap: 1.5rem; }
+  .product-card { min-width: 90%; max-width: 100%; }
+  .detalle-container { flex-direction: column; align-items: center; padding: 1.5rem 0.5rem; }
+  .detalle-img-main { width: 100%; max-width: 320px; }
+  .carrito-container, .checkout-container, .form-box, .login-container { padding: 1.5rem 0.5rem; }
+}
+@media (max-width: 768px) {
+  .hero-title { font-size: 1.5rem; }
+  .catalogo-title { font-size: 1.1rem; }
+  .product-card .card-title { font-size: 1rem; }
+  .btn-gradient { font-size: 0.95rem; padding: 0.6rem 0; }
+  .detalle-title { font-size: 1.2rem; }
+  .detalle-precio { font-size: 1.05rem; }
+  .carrito-table th, .carrito-table td { padding: 0.5rem 0.2rem; }
+}
+@media (max-width: 576px) {
+  .hero-content { padding: 1.2rem 0.2rem; }
+  .catalogo-row { gap: 0.5rem; }
+  .product-card { min-width: 98%; }
+  .detalle-container { padding: 0.7rem 0.1rem; }
+  .carrito-container, .checkout-container, .form-box, .login-container { padding: 0.7rem 0.1rem; }
+} 

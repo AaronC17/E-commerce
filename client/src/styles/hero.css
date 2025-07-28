@@ -1,0 +1,33 @@
+/* HERO/BANNER */
+.hero-section {
+  min-height: 220px;
+  background: var(--background);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2.5rem 1rem 2rem 1rem;
+}
+.hero-title {
+  font-size: 2.5rem;
+  color: #232323;
+  letter-spacing: 0.5px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+.hero-title span {
+  color: var(--primary);
+}
+.hero-desc {
+  color: #555;
+  font-size: 1.1rem;
+  max-width: 500px;
+  margin: 0.5rem auto 1.2rem auto;
+} 

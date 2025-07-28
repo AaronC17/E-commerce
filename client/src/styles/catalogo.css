@@ -1,0 +1,110 @@
+/* CATÁLOGO Y CARDS DE PRODUCTO */
+.catalogo-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 1.2rem;
+}
+.catalogo-title {
+  color: var(--primary);
+  font-size: 24px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 0;
+}
+.catalogo-divider {
+  flex: 1;
+  height: 1px;
+  background: rgba(111,44,255,0.08);
+}
+.catalogo-row {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 260px;
+  max-width: 340px;
+  min-height: 340px;
+  background: #fff;
+  box-shadow: 0 8px 32px 0 rgba(106,115,55,0.12);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+}
+
+.product-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.product-card:hover {
+  box-shadow: 0 16px 48px 0 rgba(106,115,55,0.25);
+  transform: translateY(-8px) scale(1.02);
+}
+
+.product-card:hover::before {
+  opacity: 1;
+}
+
+.product-img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  background: #f5f6fa;
+  border-bottom: 1px solid #eee;
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover .product-img {
+  transform: scale(1.05);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.2rem 1rem 1.5rem 1rem;
+  flex: 1;
+  background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
+}
+
+.card-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+  margin-bottom: 0.3rem;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+.product-card:hover .card-title {
+  color: var(--primary);
+}
+
+.card-price {
+  font-size: 1.1rem;
+  color: var(--primary);
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover .card-price {
+  transform: scale(1.05);
+} 
